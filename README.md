@@ -8,6 +8,8 @@ npm run start
 
 docker build -f Dockerfile.dev .
 
+docker run -p 3000:3000 4df8dd9ad25f
+
 #
 
 # Getting Started with Create React App
