@@ -12,7 +12,9 @@ docker build -f Dockerfile.dev .
 
 docker run -p 3000:3000 4df8dd9ad25f
 
-docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app fe767e1ce71c
+<!--doesn't work for me below command-->
+
+<!--docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app fe767e1ce71c-->
 
 docker run -p 3000:3000 -v $(pwd):/app fe767e1ce71c
 
