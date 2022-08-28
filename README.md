@@ -18,6 +18,10 @@ docker run -p 3000:3000 4df8dd9ad25f
 
 docker run -p 3000:3000 -v $(pwd):/app fe767e1ce71c
 
+docker-compose up
+
+docker-compose down
+
 #
 
 # Getting Started with Create React App
