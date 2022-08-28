@@ -22,6 +22,14 @@ docker-compose up
 
 docker-compose down
 
+docker build -f Dockerfile.dev .
+
+docker run -it fe767e1ce71c npm run test
+
+docker ps
+
+docker exec -it fe767e1ce71c npm run test
+
 #
 
 # Getting Started with Create React App
