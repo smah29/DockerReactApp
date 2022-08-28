@@ -30,7 +30,17 @@ docker ps
 
 docker exec -it fe767e1ce71c npm run test
 
-#
+docker-compose up --build
+
+docker ps
+
+docker exec -it 3042f34af8af sh
+
+# production deployment with nginx
+
+docker build .
+
+docker run -p 8080:80 2def5f73e35e
 
 # Getting Started with Create React App
 
