@@ -17,3 +17,6 @@ services:
       #- /app/node_modules
       - .:/app
     command: ['npm', 'run', 'test']
+#docker-compose -f docker-compose-dev.yml up
+#docker-compose -f docker-compose-dev.yml up --build
+#docker-compose -f docker-compose-dev.yml down
