@@ -1,3 +1,47 @@
+# commands to run
+
+npm install
+
+npm run test
+
+npm run build
+
+npm run start
+
+docker build -f Dockerfile.dev .
+
+docker run -p 3000:3000 4df8dd9ad25f
+
+<!--doesn't work for me below command-->
+
+<!--docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app fe767e1ce71c-->
+
+docker run -p 3000:3000 -v $(pwd):/app fe767e1ce71c
+
+docker-compose up
+
+docker-compose down
+
+docker build -f Dockerfile.dev .
+
+docker run -it fe767e1ce71c npm run test
+
+docker ps
+
+docker exec -it fe767e1ce71c npm run test
+
+docker-compose up --build
+
+docker ps
+
+docker exec -it 3042f34af8af sh
+
+# production deployment with nginx
+
+docker build .
+
+docker run -p 8080:80 2def5f73e35e
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
